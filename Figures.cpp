@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Triangle::drowFigure(void)
+void Triangle::drawFigure(void)
 {
 	int offset = 0;
 
@@ -37,7 +37,7 @@ void Triangle::drowFigure(void)
 	cout << endl;
 };
 
-void Rectangle::drowFigure(void)
+void Rectangle::drawFigure(void)
 {
 	cout << endl;
 	for (int i = 0; i < sizeA; i++) {
@@ -50,7 +50,7 @@ void Rectangle::drowFigure(void)
 	cout << endl;
 };
 
-void Circle::drowFigure(void)
+void Circle::drawFigure(void)
 {
 	cout << endl;
 	for (int i = 0; i < 10; i++) {
@@ -76,19 +76,19 @@ void Circle::drowFigure(void)
 int main()
 {
 	Triangle right('q', 9, true);
-	right.drowFigure();
+	right.drawFigure();
 
 	Triangle isosceles('f', 7, false);
-	isosceles.drowFigure();
+	isosceles.drawFigure();
 
 	Rectangle rect('0', 5, 6);
-	rect.drowFigure();
+	rect.drawFigure();
 
 	Rectangle square('r', 7);
-	square.drowFigure();
+	square.drawFigure();
 
 	Circle circle;
-	circle.drowFigure();
+	circle.drawFigure();
 
 	return 0;
 }

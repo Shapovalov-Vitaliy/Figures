@@ -5,7 +5,7 @@
 class Figure
 {
 public:
-	virtual void drowFigure(void) = 0;
+	virtual void drawFigure(void) = 0;
 };
 
 class Triangle : public Figure
@@ -23,7 +23,7 @@ public:
 		this->isRightTriangle = isRightTriangle;
 	}
 
-	void drowFigure(void);
+	void drawFigure(void);
 };
 
 class Rectangle : public Figure
@@ -48,11 +48,11 @@ public:
 		this->sizeB = size;
 	}
 
-	void drowFigure(void);
+	void drawFigure(void);
 };
 
 class Circle : public Figure
 {
 public:
-	void drowFigure(void);
+	void drawFigure(void);
 };
