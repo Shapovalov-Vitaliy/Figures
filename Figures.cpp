@@ -21,8 +21,7 @@ void Triangle::drowFigure(void)
 			}
 			cout << endl;
 		}
-	}
-	else {
+	} else {
 		for (int i = size; i > 0; i--) {
 			cout << "\t";
 			for (int j = 0; j < i; j++) {
@@ -66,8 +65,7 @@ void Circle::drowFigure(void)
 				i == 8 && j == 2 || i == 8 && j == 7 ||
 				i == 9 && j == 4 || i == 9 && j == 5) {
 				cout << '*';
-			}
-			else {
+			} else {
 				cout << "  ";
 			}
 		}
